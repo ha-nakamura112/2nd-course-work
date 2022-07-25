@@ -129,6 +129,7 @@ body{
   p, i{
     color:var(--defoColor);
   }
+
   img{
     width: 100%;
   }
@@ -371,6 +372,10 @@ body{
     color: cornflowerblue;
   }
 
+  .menu > figure p{
+    line-height: 1.5;
+  }
+
   .menu > figure aside{
     width: 100%;
     display: flex;
@@ -467,3 +472,190 @@ body{
   }
 }
 
+@media(min-width: 700px){
+  header{
+    flex-direction: row-reverse;
+    height: fit-content;
+  }
+
+  header > section{
+    padding: 3%;
+    height:50vh;
+    justify-content: end;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+
+  header > nav {
+    width: 80%;
+    padding: 3%;
+    display: flex;
+    height: 50vh;
+  }
+  nav > details{
+    display: none;
+  }
+
+  nav > ul{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1vh;
+    width: 100%;
+  }
+
+  nav > ul li{
+    display: flex;
+    width: 100%;
+  }
+
+  nav > ul a{
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5%;
+  }
+
+  nav > ul a:hover{
+    background-color: black;
+    color: white;
+    transition: .4;
+  }
+
+  input{
+    height: 3vh;
+  }
+  textarea{
+    height: 10vh;
+  }
+
+  .title{
+    padding: 0%;
+  }
+
+  .title p{
+    font-size: 18px;
+    word-spacing: 2px;
+  }
+  .about figure{
+    flex-direction: row;
+  }
+
+  .about img{
+    width: 30%;
+  }
+  .about figcaption h4{
+    font-size: 18px;
+  }
+
+  .about figcaption p{
+    font-size: 16px;
+    word-spacing: 2px;
+  }
+
+  .about div i{
+    font-size: 24px;
+  }
+ 
+  .feature{
+    row-gap: 0vh;
+  }
+
+  .feature i{
+    padding: 0%;
+    font-size: 56px;
+  }
+
+  .feature section{
+    row-gap: 5vh;
+  }
+  .feature section a{
+    padding: 1% 3%;
+  }
+  
+  .feature > figure:last-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .feature > figure:last-child img{
+    width:45%;
+    height: 20vh;
+  }
+  .feature > figure figcaption{
+    width: 55%;
+  }
+
+  .menu > section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3vh;
+    row-gap: 5vh;
+  }
+
+  .menu > section figure{
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .menu > section figure img{
+    width: 20vh;
+    height: 20vh;
+  }
+
+  .menu > section figcaption h3{
+    font-size: 20px;
+  }
+
+  .menu > section figcaption span{
+    font-size: 20px;
+  }
+
+  .menu > figure{
+    flex-direction: row;
+    column-gap: 2vh;
+    align-items: flex-start;
+  }
+
+  .menu > figure img{
+    height:20vh;
+    width: 45vh;
+  }
+
+  .menu > figure figcaption{
+    padding-top: 0%;
+    width: 60%;
+  }
+
+  .menu > figure figcaption a:hover{
+    background-color: var(--defoColor);
+    color: whitesmoke;
+  }
+
+  .contact > section{
+    flex-direction: row;
+    column-gap: 5vh;
+    padding: 5%;
+  }
+
+  .contact ul{
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+
+  .faq{
+    row-gap: 5vh;
+  }
+  .faq summary{
+    font-size: 26px;
+  }
+
+}
